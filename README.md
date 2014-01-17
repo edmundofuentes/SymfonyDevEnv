@@ -34,7 +34,7 @@ In your browser, go to [http://dev.com/config.php](http://dev.com/config.php) an
 
 - From your terminal enter `sudo nano /etc/php5/apache2/php.ini`
 - Press `Ctrl`+`W`, type `date.timezone` and press enter.
-- Replace `;date.timezone` with `date.timezone = UTC` (or any other from [this list of supported timezones](http://www.php.net/manual/en/timezones.php).
+- Replace `;date.timezone =` with `date.timezone = UTC` (or any other from [this list of supported timezones](http://www.php.net/manual/en/timezones.php)).
 - Press `Ctrl`+`X`, type 'y', then press enter.
 - Finally, restart the apache server by typing `sudo server apache2 restart`
 
@@ -43,7 +43,7 @@ Revisit the `config.php` page, and you should see a green banner stating that th
 ### 4. Final configurations ###
 Click the link *"Configure your Symfony Application online"* to set up the database. Most of the configuration parameters can be left as they are; however, there are two parameters that should be taken care of:
 
-* Name: (anything in case you want a custom database name)
+* Name: set your custom database name
 * Password: enter `devroot` since that's how the MySQL server was automatically configured
 
 Finally, you will be taken to a Welcome Page, from there you are good to go!
@@ -53,7 +53,8 @@ The script configures some default values for your convenience, and those are:
 
 - **MySQL:** username `root`, password `devroot`
 - **Domain name:** `dev.com` (and `www.dev.com` will redirect to `dev.com`)
-- **WebRoot Directory:**: `/var/www/dev.com/`
+- **Symfony Directory:**: `/var/www/dev.com/`
+- **WebRoot Directory:**: `/var/www/dev.com/web/`
 
 
 ## Testing ##
