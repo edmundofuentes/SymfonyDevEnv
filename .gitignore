@@ -1,0 +1,6 @@
+# Ignore everything but the installation files
+*
+!.gitignore
+!install.sh
+!README.md
+!vhost/

@@ -34,7 +34,7 @@ sudo apt-get install -y curl
 sudo apt-get install -y libcurl3 php5-curl php5-intl
 sudo service apache2 restart
 
-echo -e "\e[1m--- Configure Apache ---\e[0m"
+echo -e "\e[1m--- Configure Apache & Virtual Hosts ---\e[0m"
 echo - Prepare log files -
 sudo mkdir /etc/apache2/logs
 sudo chmod 777 -R /etc/apache2/logs
