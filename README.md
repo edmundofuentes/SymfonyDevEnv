@@ -8,19 +8,23 @@ A simple script and procedure to create a basic Symfony development environment 
 While this script takes care of most of the installation procedure, you still need to type some commands manually to get it started.
 
 Install git and prepare the installation directory:
+
 	sudo apt-get install git
 	sudo mkdir /var/www
 	sudo chmod 777 -R /var/www
 	cd /var/www
 
 Now pull the most recent version of the installation script:
+
 	git clone https://github.com/mundofr/SymfonyDevEnv .
 
 And set it as executable
+
 	chmod +x install.sh
 
 ### 2. Execute the script ###
 To run the script, enter:
+
 	./install.sh
 
 The installation should only ask for your root password once to download packages (via `apt-get`) and perform some slight changes to your system configuration (modify `/etc/hosts`).
@@ -30,7 +34,7 @@ In your browser, go to [http://dev.com/config.php](http://dev.com/config.php) an
 
 - From your terminal enter `sudo nano /etc/php5/apache2/php.ini`
 - Press `Ctrl`+`W`, type `date.timezone` and press enter.
-- Replace `;date.timezone` with `date.timezone = UTC` (or any other from [This list of supported timezones](http://www.php.net/manual/en/timezones.php).
+- Replace `;date.timezone` with `date.timezone = UTC` (or any other from [this list of supported timezones](http://www.php.net/manual/en/timezones.php).
 - Press `Ctrl`+`X`, type 'y', then press enter.
 - Finally, restart the apache server by typing `sudo server apache2 restart`
 
@@ -46,6 +50,7 @@ Finally, you will be taken to a Welcome Page, from there you are good to go!
 
 ## Default values ##
 The script configures some default values for your convenience, and those are:
+
 - **MySQL:** username `root`, password `devroot`
 - **Domain name:** `dev.com` (and `www.dev.com` will redirect to `dev.com`)
 - **WebRoot Directory:**: `/var/www/dev.com/`
