@@ -9,7 +9,7 @@ While this script takes care of most of the installation procedure, you still ne
 
 Install git and prepare the installation directory:
 
-	sudo apt-get install git
+	sudo apt-get install -y git
 	sudo mkdir /var/www
 	sudo chmod 777 -R /var/www
 	cd /var/www
