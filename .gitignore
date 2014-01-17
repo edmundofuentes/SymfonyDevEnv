@@ -3,4 +3,7 @@
 !.gitignore
 !install.sh
 !README.md
-!vhost/*
+!vhost
+!vhost/dev.com
+!vhost/dev_htaccess
+!vhost/www.dev.com
