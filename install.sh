@@ -70,12 +70,13 @@ curl -sS https://getcomposer.org/installer | php
 php composer.phar config --global discard-changes true
 
 echo - Create Symfony installation -
-php composer.phar create-project symfony/framework-standard-edition dev.com/ 2.4.*
+php composer.phar create-project --no-interaction symfony/framework-standard-edition dev.com/ 2.4.*
 
 echo - Clean up installation -
 mv composer.phar dev.com/composer.phar
 chmod -R 777 dev.com/app/cache
 chmod -R 777 dev.com/app/logs
+chmod -R 777 dev.com/app/config/parameters.yml
 
 echo - Prepare .htaccess file for dev environment -
 cp vhost/dev_htaccess dev.com/web/.htaccess
