@@ -16,7 +16,7 @@ Install git and prepare the installation directory:
 
 Now pull the most recent version of the installation script:
 
-	git clone https://github.com/mundofr/SymfonyDevEnv .
+	git clone https://github.com/edmundofuentes/SymfonyDevEnv .
 
 And set it as executable
 
